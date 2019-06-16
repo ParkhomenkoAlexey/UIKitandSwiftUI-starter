@@ -22,14 +22,8 @@ class CustomCell: UITableViewCell {
         
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        postImageView.frame.inset(by: .init(top: 10, left: 10, bottom: 10, right: 10))
-    }
-    
     func set(post: Post) {
         postImageView.image = post.image
         postLabel.text = post.text
     }
-    
 }
